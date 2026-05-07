@@ -1,0 +1,354 @@
+/* Google Fonts - A clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* CSS Variables for Colors and Fonts */
+:root {
+    --primary-color: #00A9B7; /* The teal/cyan from your logo */
+    --background-color: #1a202c; /* A dark navy/charcoal color */
+    --text-color: #E2E8F0; /* A light grey for text */
+    --card-background: #2D3748; /* A slightly lighter dark color for cards */
+    --font-main: 'Poppins', sans-serif;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/*header*/
+
+.header {
+    background-color: rgba(26, 32, 44, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-bottom: 1px solid var(--card-background);
+    padding: 1rem 5%;
+    position: fixed; /* Makes the header stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/*Hero Section*/
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    padding: 0 5%;
+    background-image: url('../images/portfolio-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Needed for the overlay */
+}
+
+/* Add a dark overlay for better text readability */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 32, 44, 0.7); /* Adjust opacity as needed */
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-name img {
+    width: 100px;
+}
+
+.hero-content {
+    position: relative; /* To bring it above the overlay */
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: 1rem 2.5rem;
+    border-radius: 50px; /* Pill-shaped button */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 169, 183, 0.2);
+}
+
+/* General Styling for Content Sections */
+.content-section {
+    padding: 6rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    color: #FFF;
+}
+
+/* Underline effect for the title */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* Project Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+}
+
+/* Individual Project Card Styling */
+.project-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures the image corners are rounded */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 169, 183, 0.2);
+}
+
+.project-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Ensures images fill the space without distortion */
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #FFF;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-tags span {
+    background-color: rgba(0, 169, 183, 0.1);
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-links a {
+    color: var(--text-color);
+    font-weight: 500;
+    margin-right: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 2; /* Takes up 2/3 of the space */
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+.about-skills {
+    flex: 1; /* Takes up 1/3 of the space */
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.about-skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #FFF;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skills-grid span {
+    background-color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact-subtitle {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+}
+
+.contact-form-container {
+    text-align: center;
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--card-background);
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Language Selector */
+.language-selector {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.lang-btn {
+    background: none;
+    border: 1px solid var(--card-background);
+    color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #FFF;
+}
+
+/* Style for the currently active language */
+.lang-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #FFF;
+}

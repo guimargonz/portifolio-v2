@@ -1,0 +1,36 @@
+[
+  {
+    "id": "fe1",
+    "category": "frontend",
+    "image": "../src/images/projects/wikifarm.png",
+    "title_key": "frontendP1Title",
+    "description_key": "frontendP1Desc",
+    "tags": ["React", "Node.js", "PostgreSQL", "Express.js", "JWT"],
+    "links": {
+      "demo": "#",
+      "code": "#"
+    }
+  },
+  {
+    "id": "be1",
+    "category": "backend",
+    "image": "https://via.placeholder.com/400x250/2D3748/E2E8F0?text=QuickPID",
+    "title_key": "backendP1Title",
+    "description_key": "backendP1Desc",
+    "tags": ["C++", "Arduino", "Embedded"],
+    "links": {
+      "code": "#"
+    }
+  },
+  {
+    "id": "be2",
+    "category": "backend",
+    "image": "https://via.placeholder.com/400x250/2D3748/E2E8F0?text=CUPS+Server",
+    "title_key": "backendP2Title",
+    "description_key": "backendP2Desc",
+    "tags": ["Linux", "CUPS", "Raspberry Pi"],
+    "links": {
+      "code": "#"
+    }
+  }
+]

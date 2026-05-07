@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Gonzaga | Software Developer</title>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <img src="./src/images/logo-no-background.png" alt="Guilherme Gonzaga Logo">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link" data-key="navHome">Home</a></li>
+                <li class="nav-item"><a href="#frontend" class="nav-link" data-key="navFrontend">Frontend</a></li>
+                <li class="nav-item"><a href="#backend" class="nav-link" data-key="navBackend">Backend</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" data-key="navAbout">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-key="navContact">Contact</a></li>
+            </ul>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="es">ES</button>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <!-- Name will be loaded here -->
+                <div class="logo-name">
+                    <img src="./src/images/logo-no-background.png" alt="GG logo">
+                    <h1 class="hero-title" id="hero-name"></h1>
+                </div>
+
+                <p class="hero-subtitle" data-key="heroSubtitle"></p>
+                <a href="#frontend" class="cta-button" data-key="heroButton"></a>
+            </div>
+        </section>
+
+        <!-- Frontend Projects Section -->
+        <section id="frontend" class="projects-section content-section">
+            <h2 class="section-title" data-key="frontendTitle"></h2>
+            <!-- Project cards will be injected here by JavaScript -->
+            <div class="projects-grid" id="frontend-grid"></div>
+        </section>
+
+        <!-- Backend Projects Section -->
+        <section id="backend" class="projects-section content-section">
+            <h2 class="section-title" data-key="backendTitle"></h2>
+            <!-- Project cards will be injected here by JavaScript -->
+            <div class="projects-grid" id="backend-grid"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section content-section">
+            <h2 class="section-title" data-key="aboutTitle"></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-key="aboutP1"></p>
+                    <p data-key="aboutP2"></p>
+                    <a href="#" class="cta-button" data-key="downloadCV"></a>
+                </div>
+                <div class="about-skills">
+                    <h3 data-key="skillsTitle"></h3>
+                    <!-- Skills will be injected here by JavaScript -->
+                    <div class="skills-grid" id="skills-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section content-section">
+            <h2 class="section-title" data-key="contactTitle">Get In Touch</h2>
+            <p class="contact-subtitle" data-key="contactSubtitle">Have a question or want to work together? Feel free
+                to reach out!</p>
+            <div class="contact-form-container">
+                <a href="mailto:your.email@example.com" class="cta-button" data-key="contactButton">Say Hello</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Guilherme Gonzaga. All rights reserved.</p>
+            <div class="social-links">
+                <!-- Add links to social profiles -->
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/scripts/script.js"></script>
+</body>
+
+</html>
