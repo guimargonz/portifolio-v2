@@ -2,7 +2,7 @@
   {
     "id": "fe1",
     "category": "frontend",
-    "image": "../src/images/projects/wikifarm.png",
+    "image": "src/images/projects/wikifarm.png",
     "title_key": "frontendP1Title",
     "description_key": "frontendP1Desc",
     "tags": ["React", "Node.js", "PostgreSQL", "Express.js", "JWT"],
