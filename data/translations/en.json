@@ -10,6 +10,8 @@
   "frontendTitle": "Frontend Projects",
   "frontendP1Title": "Wikifarm Knowledge Base",
   "frontendP1Desc": "An internal knowledge base platform (wiki) built with a robust Node.js/Express backend, a PostgreSQL database, and a reactive frontend. The project aims to centralize information and procedures, featuring user authentication, article creation/editing, and an efficient search system.",
+  "frontendP2Title": "Tickets Scripts Portal",
+  "frontendP2Desc": "A web application for managing and tracking support tickets, built with a modern frontend stack.",
   "backendTitle": "Backend Projects",
   "backendP1Title": "QuickPID Controller",
   "backendP1Desc": "A fast and versatile PID controller library written in C++, optimized for performance in embedded systems.",

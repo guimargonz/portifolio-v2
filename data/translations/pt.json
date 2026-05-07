@@ -10,6 +10,8 @@
   "frontendTitle": "Projetos de front-end",
   "frontendP1Title": "Base de Conhecimento Wikifarm",
   "frontendP1Desc":"Uma plataforma de conhecimento interna (wiki) construída com um backend robusto em Node.js/Express, banco de dados PostgreSQL e um frontend reativo. O projeto visa centralizar informações e procedimentos, oferecendo autenticação de usuários, criação/edição de artigos e um sistema de busca eficiente.",
+  "frontendP2Title": "Portal de Scripts Para Chamados",
+  "frontendP2Desc": "Uma aplicação web para gerenciamento e acompanhamento de Chamados de suporte, construída com uma stack moderna de frontend.",
   "backendTitle": "Projetos de back-end",
   "backendP1Title": "Controlador QuickPID",
   "backendP1Desc": "Uma biblioteca de controlador PID rápida e versátil escrita em C++, otimizada para desempenho em sistemas incorporados.",

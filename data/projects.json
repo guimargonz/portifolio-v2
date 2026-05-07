@@ -12,6 +12,18 @@
     }
   },
   {
+    "id": "fe2",
+    "category": "frontend",
+    "image": "./src/images/projects/portal-chamados.png",
+    "title_key": "frontendP2Title",
+    "description_key": "frontendP2Desc",
+    "tags": ["Node.js", "Express.js", "JWT"],
+    "links": {
+      "demo": "https://portal-de-scripts-para-chamados.onrender.com/index.html",
+      "code": "https://github.com/guimargonz/site-teste-meta"
+    }
+  },
+  {
     "id": "be1",
     "category": "backend",
     "image": "https://via.placeholder.com/400x250/2D3748/E2E8F0?text=QuickPID",

@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         projects.forEach(project => {
             const linksHTML = `
-                ${project.links.demo ? `<a href="${project.links.demo}" class="project-link">Live Demo</a>` : ''}
-                ${project.links.code ? `<a href="${project.links.code}" class="project-link">View Code</a>` : ''}
+                ${project.links.demo ? `<a href="${project.links.demo}" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>` : ''}
+                ${project.links.code ? `<a href="${project.links.code}" target="_blank" rel="noopener noreferrer" class="project-link">View Code</a>` : ''}
             `;
 
             const cardHTML = `
